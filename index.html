@@ -1,13 +1,64 @@
 <!DOCTYPE html> 
 <html>
   <head>
+    <!-- uncomment this to enable redirection 
+      <meta http-equiv="refresh" content="1.5; url=тестовый-файл.html">
+    -->
+
 		<title>Open the vault</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
 		<meta charset="UTF-8">
+    <link rel="icon" href="lib/media/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background: #223; 
+        margin: 0 auto;
+        width: 50vw;
+      }
+      .container {
+        margin: 25vh auto;
+        height: 50vh;
+      }
+      .container img {
+        display: block;
+        width: 100%;
+        margin: 6rem auto;
+      }
+      .container a {
+        max-width: 20rem;
+        background-color: #D4CAC9;
+        display: flex;
+        width: 100%;
+        height: 3rem;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        /* border-radius: 0.8rem; */
+        color: #111;
+        text-decoration: none;
+        transition-duration: 0.1s;
+        font-size: 1.3rem;
+        font-family: "Space Mono", monospace;
+      }
+
+      .container a:hover {
+        background-color:  #cc3733 ;
+        color: white;
+        transition-duration: 0.4s;
+      }
+    </style>
   </head>
   <body>
-    <a href="./тестовый-файл.html">
-      Open the vault.
-    </a>
+    <div class="container">
+      <img src="lib/media/obsidian.svg" width="200" height="200">
+      <a href="тестовый-файл.html">
+        open the vault
+      </a>
+    </div>
   </body>
 </html>
