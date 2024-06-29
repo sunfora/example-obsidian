@@ -27,29 +27,52 @@
         display: block;
         width: 100%;
         margin: 6rem auto;
+        transition-duration: 1s;
+      }
+      .container img:hover {
+        transform: scale(1.2, 1.2) rotate(-3deg);
       }
       .container a {
-        max-width: 20rem;
-        background-color: #D4CAC9;
-        display: flex;
-        width: 100%;
-        height: 3rem;
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
-        /* border-radius: 0.8rem; */
-        color: #111;
         text-decoration: none;
-        transition-duration: 0.1s;
+        color: #111;
         font-size: 1.3rem;
         font-family: "Space Mono", monospace;
+        
+        /* align button inside div */
+        margin: 0 auto;
+        max-width: 20rem;
+        height: 3rem;
+
+        /* align content inside button */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
+        /* transition between hover */
+        transition-duration: 0.2s;
+
+        /* blink animation */
+        background: 
+          linear-gradient(45deg, #0000 33%, rgba(255,255,255,0.9) 50%, #0000 66%),
+          #D4CAC9;
+        background-size: 300% 100%;
+        animation-name: blink;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes blink {
+        10% {
+          background-position: right;
+        }
       }
 
       .container a:hover {
-        background-color:  #cc3733 ;
+        background: #CC3733;
         color: white;
-        transition-duration: 0.4s;
+        font-size: 1.4rem;
+        animation: hidden;
       }
     </style>
   </head>
